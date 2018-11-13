@@ -8,6 +8,7 @@
 # testing
 /coverage
 /junit.xml
+/checkstyle.xml
 
 # production
 /build

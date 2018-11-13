@@ -13,7 +13,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ci-test": "CI=true react-scripts test --reporters=\"jest-junit\" --coverage"
+    "ci-test": "CI=true react-scripts test --reporters=\"jest-junit\" --coverage",
+    "ci-eslint": "eslint --config node_modules/eslint-config-react-app/index.js -f checkstyle -o checkstyle.xml src"
   },
   "eslintConfig": {
     "extends": "react-app"

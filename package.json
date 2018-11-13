@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "ci-test": "CI=true react-scripts test --reporters=\"jest-junit\""
+    "ci-test": "CI=true react-scripts test --reporters=\"jest-junit\" --coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -23,5 +23,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "jest": {
+    "coverageReporters": ["text", "cobertura"]
+  }
 }
